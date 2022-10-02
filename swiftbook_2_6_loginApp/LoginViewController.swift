@@ -19,11 +19,16 @@ class LoginViewController: UIViewController {
 
     
     @IBAction func loginButtonPressed() {
-        if usernameTF.text ?? "" == "log" && passwordTF.text ?? "" == "pass" {
-            performSegue(withIdentifier: "toLogin", sender: self)
-        } else {
+        guard usernameTF.text == "log" else {
+            showAlert(withTitle: "Error", andMessage: "Wrong username or password")
             return
         }
+        guard passwordTF.text == "pass" else {
+            showAlert(withTitle: "Error", andMessage: "Wrong username or password")
+            return
+        }
+        
+        performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,5 +39,14 @@ class LoginViewController: UIViewController {
         }
     }
     
+}
+
+extension LoginViewController {
+    private func showAlert(withTitle title: String, andMessage message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
 
