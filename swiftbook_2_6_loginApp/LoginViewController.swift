@@ -17,18 +17,22 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
     @IBAction func loginButtonPressed() {
-        guard usernameTF.text == "log" else {
+        guard usernameTF.text == "log" && passwordTF.text == "pass" else {
             showAlert(withTitle: "Error", andMessage: "Wrong username or password")
-            return
-        }
-        guard passwordTF.text == "pass" else {
-            showAlert(withTitle: "Error", andMessage: "Wrong username or password")
+            passwordTF.text = ""
             return
         }
         
         performSegue(withIdentifier: "toLogin", sender: self)
+    }
+    
+    @IBAction func forgotUserPressed() {
+        showAlert(withTitle: "Username", andMessage: "Your username is log")
+    }
+    
+    @IBAction func forgotPassPressed() {
+        showAlert(withTitle: "Password", andMessage: "Your password is pass")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
