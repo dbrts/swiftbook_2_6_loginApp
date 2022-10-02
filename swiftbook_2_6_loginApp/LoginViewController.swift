@@ -34,6 +34,11 @@ class LoginViewController: UIViewController {
         showAlert(withTitle: "Password", andMessage: "Your password is pass")
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        usernameTF.text = ""
+        passwordTF.text = ""
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toLogin" {
             guard let welcomeVC = segue.destination as? WelcomeViewController else { return }

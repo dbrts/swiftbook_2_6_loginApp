@@ -115,10 +115,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
                                 <connections>
                                     <action selector="logoutButtonPressed" destination="Cq4-m2-jJg" eventType="touchUpInside" id="Eh6-p5-XAj"/>
+                                    <segue destination="4Sb-sg-dqS" kind="unwind" unwindAction="unwindFor:" id="ic3-BR-HG7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLo-3o-qFQ">
-                                <rect key="frame" x="73" y="109" width="174.5" height="29"/>
+                                <rect key="frame" x="72.5" y="109" width="175" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -140,6 +141,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ssf-Ik-NbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4Sb-sg-dqS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="941.25" y="3.1690140845070425"/>
         </scene>
