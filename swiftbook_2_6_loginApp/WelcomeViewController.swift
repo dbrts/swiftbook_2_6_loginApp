@@ -8,6 +8,8 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    var user: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,10 @@ class WelcomeViewController: UIViewController {
     }
     
 
+    @IBAction func logoutButtonPressed() {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
