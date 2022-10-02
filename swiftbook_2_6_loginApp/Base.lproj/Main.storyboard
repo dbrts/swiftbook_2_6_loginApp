@@ -124,6 +124,9 @@
                             <constraint firstItem="nLo-3o-qFQ" firstAttribute="centerX" secondItem="pXI-KY-sxn" secondAttribute="centerX" id="qRz-IA-aVl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="nLo-3o-qFQ" id="ddn-iV-bHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ssf-Ik-NbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

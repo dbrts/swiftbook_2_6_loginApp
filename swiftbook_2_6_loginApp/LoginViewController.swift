@@ -33,9 +33,9 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toLogin" {
-            if let destination = segue.destination as? WelcomeViewController{
-                destination.user = usernameTF.text!
-              }
+            if let welcomeVC = segue.destination as? WelcomeViewController {
+                welcomeVC.username = usernameTF.text ?? "user"
+            }
         }
     }
     
