@@ -12,8 +12,20 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    let username = "log"
-    let password = "pass"
+    private let username = "log"
+    private let password = "pass"
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toLogin" {
+            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+            welcomeVC.username = username
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(false)
+    }
 
     @IBAction func loginButtonPressed() {
         guard usernameTF.text == username && passwordTF.text == password else {
@@ -39,18 +51,6 @@ class LoginViewController: UIViewController {
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         usernameTF.text = ""
         passwordTF.text = ""
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toLogin" {
-            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-            welcomeVC.username = username
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(false)
     }
     
 }
