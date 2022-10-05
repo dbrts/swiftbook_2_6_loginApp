@@ -14,13 +14,6 @@ class LoginViewController: UIViewController {
     
     private let user = User.getUser()
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toLogin" {
-            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-            welcomeVC.username = user.username
-        }
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(false)

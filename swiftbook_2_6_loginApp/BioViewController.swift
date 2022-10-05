@@ -9,21 +9,23 @@ import UIKit
 
 class BioViewController: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var companyLabel: UILabel!
+    @IBOutlet var divisionLabel: UILabel!
+    @IBOutlet var occupationLabel: UILabel!
+    @IBOutlet var navBar: UINavigationItem!
+    
+    let person = Person.getPerson()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = person.name
+        surnameLabel.text = person.surname
+        companyLabel.text = person.company
+        divisionLabel.text = person.division
+        occupationLabel.text = person.occupation
+        navBar.title = "\(person.name) \(person.surname)"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

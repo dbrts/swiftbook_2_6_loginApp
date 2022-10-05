@@ -148,7 +148,7 @@
         <!--Tim Cook-->
         <scene sceneID="Yho-g5-anR">
             <objects>
-                <viewController id="Sfc-Uz-jsp" sceneMemberID="viewController">
+                <viewController id="Sfc-Uz-jsp" customClass="BioViewController" customModule="swiftbook_2_6_loginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJS-yG-UIE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +253,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="companyLabel" destination="PU7-gz-z8y" id="jAJ-cy-loP"/>
+                        <outlet property="divisionLabel" destination="5Z7-wU-rGm" id="eBe-Hy-6V1"/>
+                        <outlet property="nameLabel" destination="OZS-1J-NEF" id="4BV-Ar-Rn2"/>
+                        <outlet property="navBar" destination="M0K-pX-Roq" id="GTP-Cq-Y8q"/>
+                        <outlet property="occupationLabel" destination="vwB-Gv-Nmi" id="zk2-Vj-XGN"/>
+                        <outlet property="surnameLabel" destination="Vgf-Pd-YFP" id="lmo-fj-7Xy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfX-Dv-7il" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
