@@ -11,10 +11,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBAction func loginButtonPressed() {
         guard usernameTF.text == "log" && passwordTF.text == "pass" else {
