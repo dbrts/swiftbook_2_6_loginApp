@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "toLogin", sender: self)
+        performSegue(withIdentifier: "toLogin", sender: nil)
     }
     
     @IBAction func forgotUserPressed() {
