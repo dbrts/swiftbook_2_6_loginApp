@@ -11,9 +11,12 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
+    
+    let username = "log"
+    let password = "pass"
 
     @IBAction func loginButtonPressed() {
-        guard usernameTF.text == "log" && passwordTF.text == "pass" else {
+        guard usernameTF.text == username && passwordTF.text == password else {
             showAlert(withTitle: "Error", andMessage: "Wrong username or password")
             passwordTF.text = ""
             return
@@ -23,11 +26,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUserPressed() {
-        showAlert(withTitle: "Username", andMessage: "Your username is log")
+        showAlert(withTitle: "Username", andMessage: "Your username is \(username)")
     }
     
     @IBAction func forgotPassPressed() {
-        showAlert(withTitle: "Password", andMessage: "Your password is pass")
+        showAlert(withTitle: "Password", andMessage: "Your password is \(password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -38,7 +41,7 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toLogin" {
             guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-            welcomeVC.username = usernameTF.text ?? "user"
+            welcomeVC.username = username
         }
     }
     
