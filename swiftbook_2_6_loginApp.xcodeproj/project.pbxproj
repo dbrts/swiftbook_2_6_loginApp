@@ -14,6 +14,7 @@
 		AC0773DB28E8B9800032D628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0773DA28E8B9800032D628 /* Assets.xcassets */; };
 		AC0773DE28E8B9800032D628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0773DC28E8B9800032D628 /* LaunchScreen.storyboard */; };
 		AC0773E828E8BA590032D628 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0773E728E8BA590032D628 /* WelcomeViewController.swift */; };
+		AC8FF86228EDE5390079F0AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AC0773DD28E8B9800032D628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC0773DF28E8B9800032D628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0773E728E8BA590032D628 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				AC0773D328E8B97D0032D628 /* SceneDelegate.swift */,
 				AC0773D528E8B97D0032D628 /* LoginViewController.swift */,
 				AC0773E728E8BA590032D628 /* WelcomeViewController.swift */,
+				AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */,
 				AC0773D728E8B97D0032D628 /* Main.storyboard */,
 				AC0773DA28E8B9800032D628 /* Assets.xcassets */,
 				AC0773DC28E8B9800032D628 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				AC0773D628E8B97D0032D628 /* LoginViewController.swift in Sources */,
 				AC0773E828E8BA590032D628 /* WelcomeViewController.swift in Sources */,
 				AC0773D228E8B97D0032D628 /* AppDelegate.swift in Sources */,
+				AC8FF86228EDE5390079F0AA /* TabBarViewController.swift in Sources */,
 				AC0773D428E8B97D0032D628 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
