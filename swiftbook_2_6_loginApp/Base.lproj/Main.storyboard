@@ -269,7 +269,7 @@
         <!--Tim Cook Bio-->
         <scene sceneID="1qB-48-sa2">
             <objects>
-                <viewController id="ZXg-wE-x80" sceneMemberID="viewController">
+                <viewController id="ZXg-wE-x80" customClass="BioInfoViewController" customModule="swiftbook_2_6_loginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mI0-re-vnf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,6 +291,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tim Cook Bio" id="djq-wM-kuR"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="Y2h-PN-7Sm" id="U3e-Lm-cG9"/>
+                        <outlet property="navBar" destination="djq-wM-kuR" id="pop-qs-7dg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HKS-hl-RYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +325,7 @@
                     <tabBarItem key="tabBarItem" title="Bio" image="person.fill" catalog="system" id="Tde-bV-Zwt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="j1r-JF-c7f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
