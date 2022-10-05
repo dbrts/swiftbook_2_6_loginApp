@@ -66,20 +66,52 @@
 		AC0773D028E8B97D0032D628 /* swiftbook_2_6_loginApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC8FF86A28EDF1090079F0AA /* ViewControllers */,
+				AC8FF86C28EDF1300079F0AA /* Models */,
+				AC8FF86928EDF0BF0079F0AA /* App */,
+				AC8FF86B28EDF1180079F0AA /* Storyboards */,
+				AC0773DA28E8B9800032D628 /* Assets.xcassets */,
+			);
+			path = swiftbook_2_6_loginApp;
+			sourceTree = "<group>";
+		};
+		AC8FF86928EDF0BF0079F0AA /* App */ = {
+			isa = PBXGroup;
+			children = (
 				AC0773D128E8B97D0032D628 /* AppDelegate.swift */,
-				AC8FF86328EDEA4A0079F0AA /* User.swift */,
 				AC0773D328E8B97D0032D628 /* SceneDelegate.swift */,
+				AC0773DF28E8B9800032D628 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AC8FF86A28EDF1090079F0AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				AC0773D528E8B97D0032D628 /* LoginViewController.swift */,
 				AC8FF86528EDEBEB0079F0AA /* BioViewController.swift */,
 				AC8FF86728EDEEE50079F0AA /* BioInfoViewController.swift */,
 				AC0773E728E8BA590032D628 /* WelcomeViewController.swift */,
 				AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */,
-				AC0773D728E8B97D0032D628 /* Main.storyboard */,
-				AC0773DA28E8B9800032D628 /* Assets.xcassets */,
-				AC0773DC28E8B9800032D628 /* LaunchScreen.storyboard */,
-				AC0773DF28E8B9800032D628 /* Info.plist */,
 			);
-			path = swiftbook_2_6_loginApp;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC8FF86B28EDF1180079F0AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC0773D728E8B97D0032D628 /* Main.storyboard */,
+				AC0773DC28E8B9800032D628 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC8FF86C28EDF1300079F0AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC8FF86328EDEA4A0079F0AA /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8M54JQ35A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = swiftbook_2_6_loginApp/Info.plist;
+				INFOPLIST_FILE = swiftbook_2_6_loginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8M54JQ35A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = swiftbook_2_6_loginApp/Info.plist;
+				INFOPLIST_FILE = swiftbook_2_6_loginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

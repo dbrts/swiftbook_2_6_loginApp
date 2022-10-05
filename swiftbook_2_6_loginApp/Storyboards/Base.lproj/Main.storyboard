@@ -275,8 +275,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2h-PN-7Sm">
-                                <rect key="frame" x="16" y="108.5" width="288" height="162.5"/>
-                                <string key="text">съешь ещё этих мягких французских булок, да выпей чаю съешь ещё этих мягких французских булок, да выпей чаю съешь ещё этих мягких французских булок, да выпей чаю съешь ещё этих мягких французских булок, да выпей чаю</string>
+                                <rect key="frame" x="16" y="108.5" width="288" height="183"/>
+                                <string key="text">template template template template template template template template template template template template template template template template template template template template template template template template template template template template template template template template template </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
