@@ -117,8 +117,8 @@
                                     <segue destination="4Sb-sg-dqS" kind="unwind" unwindAction="unwindFor:" id="ic3-BR-HG7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLo-3o-qFQ">
-                                <rect key="frame" x="72.5" y="109" width="175" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nLo-3o-qFQ">
+                                <rect key="frame" x="16" y="109" width="288" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -128,6 +128,7 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="pCI-oY-wMb" firstAttribute="centerX" secondItem="Ahm-bY-LtR" secondAttribute="centerX" id="9P9-58-CLF"/>
+                            <constraint firstItem="nLo-3o-qFQ" firstAttribute="width" secondItem="pXI-KY-sxn" secondAttribute="width" multiplier="0.9" id="Kbr-Wk-iYH"/>
                             <constraint firstItem="Ahm-bY-LtR" firstAttribute="bottom" secondItem="pCI-oY-wMb" secondAttribute="bottom" constant="138" id="P8z-wM-etm"/>
                             <constraint firstItem="nLo-3o-qFQ" firstAttribute="top" secondItem="Ahm-bY-LtR" secondAttribute="top" constant="109" id="SbC-Xc-47O"/>
                             <constraint firstItem="bgI-4A-gUO" firstAttribute="top" secondItem="nLo-3o-qFQ" secondAttribute="bottom" constant="35" id="jSG-9D-vd8"/>
@@ -321,7 +322,7 @@
         <!--Bio-->
         <scene sceneID="a3j-Ue-kWD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbq-ak-0Ey" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbq-ak-0Ey" customClass="NavigationBarViewController" customModule="swiftbook_2_6_loginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bio" image="person.fill" catalog="system" id="Tde-bV-Zwt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="j1r-JF-c7f">
