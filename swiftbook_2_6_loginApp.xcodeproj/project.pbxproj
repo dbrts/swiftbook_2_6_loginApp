@@ -15,6 +15,8 @@
 		AC0773DE28E8B9800032D628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0773DC28E8B9800032D628 /* LaunchScreen.storyboard */; };
 		AC0773E828E8BA590032D628 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0773E728E8BA590032D628 /* WelcomeViewController.swift */; };
 		AC8FF86228EDE5390079F0AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */; };
+		AC8FF86428EDEA4A0079F0AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FF86328EDEA4A0079F0AA /* User.swift */; };
+		AC8FF86628EDEBEB0079F0AA /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FF86528EDEBEB0079F0AA /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AC0773DF28E8B9800032D628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0773E728E8BA590032D628 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AC8FF86328EDEA4A0079F0AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC8FF86528EDEBEB0079F0AA /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				AC0773D128E8B97D0032D628 /* AppDelegate.swift */,
+				AC8FF86328EDEA4A0079F0AA /* User.swift */,
 				AC0773D328E8B97D0032D628 /* SceneDelegate.swift */,
 				AC0773D528E8B97D0032D628 /* LoginViewController.swift */,
+				AC8FF86528EDEBEB0079F0AA /* BioViewController.swift */,
 				AC0773E728E8BA590032D628 /* WelcomeViewController.swift */,
 				AC8FF86128EDE5390079F0AA /* TabBarViewController.swift */,
 				AC0773D728E8B97D0032D628 /* Main.storyboard */,
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8FF86628EDEBEB0079F0AA /* BioViewController.swift in Sources */,
 				AC0773D628E8B97D0032D628 /* LoginViewController.swift in Sources */,
 				AC0773E828E8BA590032D628 /* WelcomeViewController.swift in Sources */,
+				AC8FF86428EDEA4A0079F0AA /* User.swift in Sources */,
 				AC0773D228E8B97D0032D628 /* AppDelegate.swift in Sources */,
 				AC8FF86228EDE5390079F0AA /* TabBarViewController.swift in Sources */,
 				AC0773D428E8B97D0032D628 /* SceneDelegate.swift in Sources */,
